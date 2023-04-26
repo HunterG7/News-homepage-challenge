@@ -13,10 +13,43 @@
 </head>
 <body>
 <div class="page-wrapper align-center">
-    <header class="container justify-center">
+    <div class="overlay"></div>
+
+    <!-- Mobile Nav Sidebar -->
+    <div class="container mobile-nav">
+        <div class="row justify-right">
+            <div class="img-wrapper">
+                <img id="menu-close" src="news-homepage-main/assets/images/icon-menu-close.svg" alt="Close Menu Icon">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column justify-center mobile-nav-menu">
+                <a>Home</a>
+                <a>New</a>
+                <a>Popular</a>
+                <a>Trending</a>
+                <a>Categories</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Header -->
+    <section id="mobile-header" class="container justify-center">
+        <div class="row align-center">
+            <div id="mobile-logo-col" class="column justify-center">
+                <img id="logo" src="news-homepage-main/assets/images/logo.svg" alt="Logo">
+            </div>
+            <div class="column justify-center align-right">
+                <img id="menu-icon" src="news-homepage-main/assets/images/icon-menu.svg" alt="Menu Icon">
+            </div>
+        </div>
+    </section>
+
+    <!-- Desktop Header -->
+    <header id="desktop-header" class="container justify-center">
         <div class="row align-center no-padding">
             <div class="column logo">
-                <img src="news-homepage-main/assets/images/logo.svg" alt="logo">
+                <img src="news-homepage-main/assets/images/logo.svg" alt="Logo">
             </div>
             <div class="column nav">
                 <div class="row no-padding">
@@ -30,9 +63,10 @@
         </div>
     </header>
 
+    <!-- Desktop Content -->
     <main>
         <article class="box box1">
-            <img src="news-homepage-main/assets/images/image-web-3-desktop.jpg" alt="web 3 image">
+            <img src="news-homepage-main/assets/images/image-web-3-desktop.jpg" alt="Web 3.0 Image">
         </article>
 
         <article class="box box2">
@@ -111,10 +145,14 @@
             </div>
         </article>
     </main>
+
+    <!-- Citation / Footer -->
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="https://www.frontendmentor.io/profile/HunterG7">Hunter</a>.
     </div>
 </div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
